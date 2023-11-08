@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Huella de Carbono</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1 class="animated-title"> Calculadora de Huella de Carbono </h1>
+    </header>
+
+    <nav class="menu-desp">
+        <ul>
+            <li class="menu-item">
+                <a href="index.html"><b> Inicio </b></a>
+            </li> 
+            
+            <li class="menu-item dropdown">
+              <button class="dropdown-toggle"><b> Información </b></button>
+                <div class="submenu">
+                    <a href="Sobre.html"> Sobre la Contaminación </a>
+                    <a href="Contaminantes.html"> Contaminantes </a>
+                    <a href="Calculadora.html"> Calculadora </a>
+                    <a href="Soluciones.html"> Posibles Soluciones </a>
+                    <a href="Formulario.html"> Formulario </a>
+                </div>
+            </li> 
+        </ul>
+    </nav>
+   
+    <div class="calculadora">
+
+        <label for="transporte">Selecciona tu modo de transporte:</label>
+        
+        <select id="transporte">
+        
+            <option value="coche">Automóvil</option>
+        
+            <option value="transporte-publico">Transporte Público</option>
+        
+            <option value="bicicleta">Bicicleta</option>
+        
+        </select>
+        
+        <br><br>
+        
+        <label for="consumo-energia">Consumo de energía en el hogar (kWh/año):</label>
+        
+        <input type="number" id="consumo-energia" placeholder="Escribe tu consumo de energía">
+        
+        <br><br>
+        
+        <label for="reciclaje">¿Reciclas? (kg de residuos reciclados/año):</label>
+        
+        <input type="number" id="reciclaje" placeholder="Escribe la cantidad reciclada">
+        
+        <br><br>
+        
+        <button onclick="calcularHuella()">Calcular Huella de Carbono</button>
+        
+        <br><br>
+        
+        <div id="resultado"></div>
+    
+    </div>
+
+</div>
+
+    <!-- Pie de página -->
+    <footer>
+       <p><b> &copy; 2023 Mi Página sobre Contaminación</b></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

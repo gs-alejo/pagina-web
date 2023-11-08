@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Opinión sobre la Contaminación</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Formulario de Opinión sobre la Contaminación</title>
+        <link rel="stylesheet" type="text/css" href="style2.css">
+    </head>
+    <body>
+
+        <nav class="menu-desp">
+            <ul>
+                <li class="menu-item">
+                    <a href="index.html"><b> Inicio </b></a>
+                </li> 
+                
+                <li class="menu-item dropdown">
+                  <button class="dropdown-toggle"><b> Información </b></button>
+                    <div class="submenu">
+                        <a href="Sobre.html"> Sobre la Contaminación </a>
+                        <a href="Contaminantes.html"> Contaminantes </a>
+                        <a href="Calculadora.html"> Calculadora </a>
+                        <a href="Soluciones.html"> Posibles Soluciones </a>
+                        <a href="Formulario.html"> Formulario </a>
+                    </div>
+                </li> 
+            </ul>
+        </nav>
+
+        <div class="container">
+            <h1>Formulario de Opinión sobre la Contaminación</h1>
+            <form id="opinionForm" enctype="multipart/form-data">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+    
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+    
+                <label for="pais">País:</label>
+                <input type="text" id="pais" name="pais" required>
+    
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad" required>
+    
+                <label for="opinion">Opinión sobre la contaminación:</label>
+                <textarea id="opinion" name="opinion" rows="5" required></textarea>
+    
+                <label for="archivo">Subir archivo (PDF o DOCX):</label>
+                <input type="file" id="archivo" name="archivo" accept=".pdf, .docx" required>
+    
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+    </html>
+    
+    <script src="script.js"></script>
+</body>
+</html>
